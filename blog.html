@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <head>
-  <script src="/assets/jquery.js"></script>
+  
+  <title>Wanderlust blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "dist/css/bootstrap.css" rel= "stylesheet">
   <link href="normalize.css" rel="stylesheet" >
   <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
-  <title>Wanderlust blog</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
   <header>
-    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="300px" height="" >
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="300px" height="" class="img-circle">
     <h1>Wanderlust Blog</h1>
     <ul>
       <li><a href="#">Cities</a></li>
@@ -15,23 +21,35 @@
       <li><a href="#">Recent Trips</a></li>
     </ul>
   </header>
+  <div class="intro text-center" >
   <article>
-    <h2>Hi </h2>
-    <p>This is a great landing page</p>
-    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" >
-    <button>Like</button>
-
+    <h2>It's great to meet you all</h2>
+    <p>We will tell you all about various trips we've been on and what we recommend you do</p>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" class="img-responsive" >
+    <button class="btn btn-success center-block">Like</button>
   </article>
+</div>
+<div class="first">
   <article>
-    <h2>What do you want to know</h2>
-    <p>First name</p>
+    <h2>Venice</h2>
+    <p>Venice is a fantastic place to visit expecially when carnival is on</p>
+    <p>During our 4 days is Venice we did lots of things including:</p>
+    <ul>
+      <li>Went on a Bacari tour to eat lots of chinchetti and drink lots of 80c glasses of wine!</li>
+      <li>Visited St. Marks square to see all the people dressed up posing infront of Doges Palace</li>
+      <li> Cruised around the canals of Venice in a Gondola</li>
+      <li> Took a private boat from the airport </li>
+     </ul>  
     <button>Like</button>
   </article>
+</div>
+<div class="second">
   <article>
     <h2>Would you like <em>this</em></h2>
     <p></p>
     <button>Like</button>
   </article>
+</div>
   <script>
     $("button").on("click", function() {
       alert("Thanks for clicking");
