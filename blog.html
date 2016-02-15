@@ -25,12 +25,16 @@
   <article>
     <h2>It's great to meet you all</h2>
     <p>We will tell you all about various trips we've been on and what we recommend you do</p>
-    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" class="img-responsive" >
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" class="img-responsive center-block" >
     <button class="btn btn-success center-block">Like</button>
   </article>
 </div>
 <div class="first">
-  <article>
+  <div 
+  <div class= "container">
+        <div class="row">
+          <div class="col-md-8">
+           <article>
     <h2>Venice</h2>
     <p>Venice is a fantastic place to visit expecially when carnival is on</p>
     <p>During our 4 days is Venice we did lots of things including:</p>
@@ -40,19 +44,62 @@
       <li> Cruised around the canals of Venice in a Gondola</li>
       <li> Took a private boat from the airport </li>
      </ul>  
-    <button>Like</button>
+    <button class="btn-success center-block" id="Venice">Like</button>
   </article>
+          </div>
+          <div class="col-md-4">
+           <img src="images/Venice4.jpg" class="img-responsive">
+         </div>
+  
 </div>
 <div class="second">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Venice1.jpg" alt="Pug">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/Venice2.jpg" alt="Venice River">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/Venice5.jpg" alt="Venice Gondola">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>    
+
   <article>
     <h2>Would you like <em>this</em></h2>
     <p></p>
-    <button>Like</button>
+    <button class="btn-success center-block" id="final" >Like</button>
   </article>
 </div>
   <script>
     $("button").on("click", function() {
-      alert("Thanks for clicking");
+      alert("Thanks for Liking");
     });
   </script>
 </body>
