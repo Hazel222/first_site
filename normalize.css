@@ -5,53 +5,79 @@
       background-size: cover;
       color: white;
     }  
+
     a {
       color: white;
     }
     h1 {
       font-size: 40px;
-      font-family: 'Londrina Shadow', cursive;
+      font-family: 'Londrina Shadow', cursive;  
     }
-    img {
-      margin: 40px 0px 0px 0px;
+    h2{
+      font-family: 'Rouge Script', cursive;
+    }
+    .intro p{
+      font-size: 40px;
+    }
+    p{
+      font-family: 'Rouge Script', cursive;
+      font-size: 20px;
+    }
+    header img {
+      margin: 20px 0px 0px 0px;
       border: 7px solid white;
       border-radius: 20px;
       class: img-circle;
     }
+    img {
+      margin: 0px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+      class: img-circle;
+    }
+
     ul {
       padding: 10px;
       background: rgba(0,0,0,0.5);
       font-family: 'Londrina Shadow';
       font-size: 20px;
     }
-    li {
+    #nav li {
       display: inline;
       padding: 0px 10px 0px 10px;
+      list-style-type: none;
     }
     article {
-      max-width: 500px;
-      padding: 20px;
+      position: center;
+      padding: 20px 20px 0 80px;
       margin: 0 auto;
     }
     @media (max-width: 500px) {
       h1 {
         font-size: 36px;
         padding: 5px;
-        color: blue;
+        color: white;
       }
       li {
         padding: 5px;
         display: block;
       }
+      article{
+        padding: 5px 5px 0px 0px;
+      }
+      img{
+        margin:5px;
+      }
+
 
     }
     body{
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,100,255,0.7);
       text-align: center;
     }
 
     .intro{
-      background-color: rgba(0,100,255,0.5);
+      background-color: rgba(193,247,255,0.7);
       color:white;
     }
     .first{
@@ -65,3 +91,12 @@
     .first ul{
         color:white;
       }
+    a:hover{
+        color:#9affde;
+    }  
+
+    #venice li {
+      list-style: none;
+    }
+
+    
