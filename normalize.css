@@ -51,6 +51,7 @@ ul {
   list-style-type: none;
 }
 
+
 article {
   position: center;
   padding: 20px 20px 0 80px;
@@ -73,21 +74,22 @@ body {
   color:white;
 }
 
-.first p {
-  background: rgba(0,0,0,0.5);
-}
-
 .first ul {
     color:white;
+}
+
+.first table {
+  display:inline;
+}
+
+#venice li {
+  list-style: none;
 }
 
 a:hover { 
     color:#9affde;
 }  
 
-#venice li {
-  list-style: none;
-}
 
 @media (max-width: 500px) {
   h1 {

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Wanderlust blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "dist/css/bootstrap.css" rel= "stylesheet">
+  <link href="normalize.css" rel="stylesheet" >
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="200px" height="" class="img-circle">
+    <h1>Wanderlust Blog</h1>
+    <ul id="nav">
+      <li><a href="#">Cities</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="#first">Recent Trips</a></li>
+    </ul>
+  </header>
+  <div class="intro text-center">
+    <div class="row">
+      <article>
+        <div class="col-md-8">
+          <p>It's great to meet you all</p>
+          <p>We will tell you all about various trips we've been on and what we recommend you do</p>
+          <p> lots of love Hazel & Miki </p>
+        </div>
+        <div class="col-md-4">
+        <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" class="img-responsive center-block" >
+        <button class="btn see btn-success center-block">See More</button>
+      </div>
+      </article>
+    </div>
+  </div>
+  <div class="first">
+    <div 
+    <div class= "container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Choose from our most recent trips:</h2> 
+        </div>
+           
+      <div class="col-md-3">
+        <img src="images/Venice4.jpg" class=" img-circle img-responsive">
+          <blockquote>
+            <p>Great for a long weekend</p>
+          </blockquote>
+          <button class="btn-success center-block" id="Venice">Venice</button> 
+      </div>
+
+      <div class="col-md-3">
+      
+          <blockquote>
+            <p>Stay here for 2 weeks or more</p>
+          </blockquote>
+          <button class="btn-success center-block" id="Vietnam">Vietnam</button>
+      </div>
+
+      <div class="col-md-3">
+        <img src='images/person.jpg'class="img-circle center-block">
+          <blockquote>
+            <p>Great for a long weekend</p>
+          </blockquote>
+          <button class="btn-success center-block" id="London">London</button>
+      </div>
+
+      <div class="col-md-3">
+        <img src='images/person.jpg'class="img-circle center-block">
+          <blockquote>
+            <p>Great for a long weekend</p>
+          </blockquote>
+          <button class="btn-success center-block" id="Sydney">Sydney</button>
+      </div>
+
+
+        </article>
+      </div>
+      <div class="col-md-4">
+       
+     </div>
+
+   </div>
+   <div class="second">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/Venice1.jpg" alt="Pug">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Venice2.jpg" alt="Venice River">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Venice5.jpg" alt="Venice Gondola">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>    
+
+    <article>
+      <h2>Would you like to know when we add new blogs? <em>join our mailing list!</em></h2>
+      <p></p>
+      <form>
+        Email:
+        <input type="text" name="email">
+       </form> 
+      <button class="btn-success subscribe center-block" id="final" >Subscribe</button>
+    </article>
+  </div>
+  <script>
+  $("button.see").on("click", function() {
+    alert("");
+  });
+  </script>
+  <script>
+  $("button.like").on("click", function() {
+    alert("Thanks for Liking");
+  });
+  </script>
+  <script>
+  $("button.subscribe").on("click", function() {
+    alert("Thanks for Subscribing");
+  });
+  </script>
+
+</body>
