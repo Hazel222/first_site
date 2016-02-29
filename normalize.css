@@ -104,7 +104,7 @@ article {
 }
 
 body {
-  background-color: rgba(0,100,255,0.7);
+  background-color: rgba(193,247,255,0.7);
   text-align: center;
   padding: 0px;
 }
@@ -149,7 +149,7 @@ body {
  } 
 
 .London { 
-  background-image: url("images/Indo1.jpg");
+  background-image: url("images/London1.jpg");
   background-size: cover;
   color:white;
   border:7px solid white;
@@ -157,6 +157,10 @@ body {
 
 .London img{
   margin: 25px 0px 25px 0px;  
+}
+
+.London ul {
+  list-style: none;
 }
 
 .peru { 
@@ -170,6 +174,34 @@ body {
   margin: 25px 0px 25px 0px;
  } 
 
+.peru ul{
+  list-style: none;
+}
+
+
+.img {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+    height: 370px;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    font-family: "Londrina shadow";
+    padding: 15px;
+    text-align: center;
+    vertical-align: bottom;
+}
 
 .footer-distributed {
   background-color: rgba(193,247,255,0.7);
@@ -180,8 +212,8 @@ body {
   font-family: 'Londrina Shadow', cursive;
 }
 
-.footer-left{
-  
+.footer-company-name {
+  font-family:
 }
 
 
