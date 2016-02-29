@@ -3,6 +3,7 @@ header {
   background: url('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xtp1/t31.0-8/11802703_10155973001620364_5537901649505717432_o.jpg');
   background-size: cover;
   color: white;
+  padding: 0px;
 }  
 a {
   color: white;
@@ -15,7 +16,7 @@ h2{
   font-family: 'Rouge Script', cursive;
 }
 .intro p{
-  font-size: 40px;
+  font-size: 25px;
 }
 p{
   font-family: 'Rouge Script', cursive;
@@ -38,6 +39,10 @@ img {
   class: img-circle;
 }
 
+.circle img{
+  size: 100px;
+}
+
 ul {
   padding: 10px;
   background: rgba(0,0,0,0.5);
@@ -52,6 +57,46 @@ ul {
 }
 
 
+
+.dropbtn li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropbtn:hover .dropbtn {
+    color:#9affde;
+}
+
+.dropdown li{
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 article {
   position: center;
   padding: 20px 20px 0 80px;
@@ -61,6 +106,7 @@ article {
 body {
   background-color: rgba(0,100,255,0.7);
   text-align: center;
+  padding: 0px;
 }
 
 .intro {
@@ -69,9 +115,10 @@ body {
 }
 
 .first { 
-  background-image: url("https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10406751_10100453674781742_601749011062369627_n.jpg?oh=3a14e783b34a5c27986f3e2ddf978701&oe=575E2736");
+  background-image: url("images/Venice6.jpg");
   background-size: cover;
   color:white;
+  border:7px solid white;
 }
 
 .first ul {
@@ -82,13 +129,67 @@ body {
   display:inline;
 }
 
+.second {
+  padding: 20px;
+}
+
 #venice li {
   list-style: none;
 }
 
-a:hover { 
-    color:#9affde;
-}  
+.indo { 
+  background-image: url("images/Indo1.jpg");
+  background-size: cover;
+  color:white;
+  border:7px solid white;
+}
+
+.indo img{
+  margin: 25px 0px 25px 0px;
+ } 
+
+.London { 
+  background-image: url("images/Indo1.jpg");
+  background-size: cover;
+  color:white;
+  border:7px solid white;
+}
+
+.London img{
+  margin: 25px 0px 25px 0px;  
+}
+
+.peru { 
+  background-image: url("images/sa.jpg");
+  background-size: cover;
+  color:white;
+  border:7px solid white;
+}
+
+.peru img{
+  margin: 25px 0px 25px 0px;
+ } 
+
+
+.footer-distributed {
+  background-color: rgba(193,247,255,0.7);
+  margin:5px;
+  border: 7px solid white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Londrina Shadow', cursive;
+}
+
+.footer-left{
+  
+}
+
+
+.footer-icons a{
+  size:30px; 
+}
+  
+
 
 
 @media (max-width: 500px) {

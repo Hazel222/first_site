@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Wanderlust - London</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "dist/css/bootstrap.css" rel= "stylesheet">
+  <link href="normalize.css" rel="stylesheet" >
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="200px" height="" class="img-circle">
+    <h1>Wanderlust Blog</h1>
+    <ul id="nav">
+      <li><a href="blog.html">Home</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="venice.html">Recent Trips</a></li>
+      <li><a href="Contact.html">Recommend to a Friend</a><li> 
+    </ul>
+  </header>
+
+
+
+<div class="London">
+    
+    <div class= "container">
+      <div class="row">
+        <div class="col-md-8">
+         <article>
+          <h2>London</h2>
+          <p>London is the place I hang my hat!</p>
+          <p>I love London it's one of the most vibrant cities I've ever lived in. I currently live in Brixton and I'm forever exploring. Here's a few of my recommendations</p>
+          <ul id="london">
+            <li>Spend the day as a tourist - go see big ben, the big screens in Picadilly circus and stand in Leicester Square hoping to catch site of a premiere</li>
+            <li>Shop on Oxford Street, it's always crazy busy but you can always go to Selfridges and catch some down time in their Champagne Bar!</li>
+            <li> Go to a comedy club - the app YPlan is your best friend for booking impromptu nights at a comedy club</li>
+            <li> The various food markets around London are fantastic, Borough and Spitalfields markets are full of delightful street food </li>
+          </ul>  
+          <button class="btn-success like center-block" id="Venice">Like</button>
+        </article>
+      </div>
+      <div class="col-md-4">
+       <img src="images/Venice4.jpg" class="img-responsive">
+     </div>
+  <script>
+  $("button.like").on("click", function() {
+    alert("Thanks for Liking");
+  });
+  </script>
+
+</body>     

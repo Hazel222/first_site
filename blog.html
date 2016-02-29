@@ -8,6 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -18,18 +19,26 @@
     <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="200px" height="" class="img-circle">
     <h1>Wanderlust Blog</h1>
     <ul id="nav">
-      <li><a href="#">Cities</a></li>
+      <li><a href="blog.html">Home</a></li>
       <li><a href="#">Pictures</a></li>
-      <li><a href="#first">Recent Trips</a></li>
+      <li><a href="#first" class="dropdown">Recent Trips</a>
+        <div class="dropdown-content">
+          <a href="#"> Venice </a>
+          <a href="#"> Indonesia </a>
+          <a href="#"> London </a>
+          <a href="#"> Peru </a>
+         </div> 
+        </li>
+       <li><a href="Contact.html">Recommend to a Friend</a><li> 
     </ul>
   </header>
   <div class="intro text-center">
     <div class="row">
       <article>
         <div class="col-md-8">
-          <p>It's great to meet you all</p>
-          <p>We will tell you all about various trips we've been on and what we recommend you do</p>
-          <p> lots of love Hazel & Miki </p>
+          <p>It's great to meet you all!</p>
+          <p>During my 24 years I've caught the travel bug... I find no matter where I've been it's never quite enough! So tune in to hear about the places I've been and the cities I've lived in. I'll even throw in the odd recommendation or two.</p>
+          <p> lots of love </br> Hazel </br> xxx </p>
         </div>
         <div class="col-md-4">
         <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10689638_10152807408702664_8666798856582389273_n.jpg?oh=8a0c3b06ecf41497883c38f699fd97fa&oe=57235294" width="300px" height="" class="img-responsive center-block" >
@@ -43,39 +52,39 @@
     <div class= "container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Choose from our most recent trips:</h2> 
+          <h2><em>Here are my most recent trips:</em></h2> 
         </div>
            
       <div class="col-md-3">
-        <img src="images/Venice4.jpg" class=" img-circle img-responsive">
+        <img src="images/Venice4.jpg" class=" img-circle img-responsive circle">
           <blockquote>
             <p>Great for a long weekend</p>
           </blockquote>
-          <button class="btn-success center-block" id="Venice">Venice</button> 
+          <a class="btn-success center-block" href="venice.html" id="Venice">Venice</a> 
       </div>
 
       <div class="col-md-3">
-      
+        <img src='images/bali.jpg'class="img-circle img-responsive circle">
           <blockquote>
             <p>Stay here for 2 weeks or more</p>
           </blockquote>
-          <button class="btn-success center-block" id="Vietnam">Vietnam</button>
+          <a class="btn-success center-block" href="indonesia.html" id="Indonesia">Indonesia</a>
       </div>
 
       <div class="col-md-3">
-        <img src='images/person.jpg'class="img-circle center-block">
+        <img src='images/London.jpg'class="img-circle img-responsive circle">
           <blockquote>
-            <p>Great for a long weekend</p>
+            <p>A fun vibrant city with plenty to experience</p>
           </blockquote>
-          <button class="btn-success center-block" id="London">London</button>
+          <a class="btn-success center-block" href="London.html"id="London">London</a>
       </div>
 
       <div class="col-md-3">
-        <img src='images/person.jpg'class="img-circle center-block">
+        <img src='images/Peru.jpg'class="img-circle img-responsive circle">
           <blockquote>
-            <p>Great for a long weekend</p>
+            <p>Easy to occupy yourself for anywhere from weeks to months!</p>
           </blockquote>
-          <button class="btn-success center-block" id="Sydney">Sydney</button>
+          <a class="btn-success center-block" href="peru.html"id="Peru">Peru <a href="peru.html"></a>
       </div>
 
 
@@ -128,18 +137,67 @@
     <article>
       <h2>Would you like to know when we add new blogs? <em>join our mailing list!</em></h2>
       <p></p>
-      <form>
-        Email:
-        <input type="text" name="email">
-       </form> 
-      <button class="btn-success subscribe center-block" id="final" >Subscribe</button>
+      <form class="form-inline">
+      <div class="form-group">
+        <label for="emaillist">Email:</label>
+        <input type="text" class="form-control" id="emaillist" placeholder="example@icloud.com">
+      </div>
+        <button class="btn-success subscribe center-block" id="final" >Subscribe</button>
+      </form> 
     </article>
   </div>
-  <script>
-  $("button.see").on("click", function() {
-    alert("");
-  });
-  </script>
+
+
+  <div class="footer-distributed row">
+
+    <div class="footer-left col-md-4">
+
+      <h3>Wanderlust<br><span>Dare to Travel </span></h3>
+
+
+      <p class="footer-company-name">WANDERLUST © 2016</p>
+    </div>
+
+    <div class="footer-center col-md-4">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Brixton</span> London, England</p>
+      </div>
+
+      <div>
+        <i class= "fa fa-phone"></i>
+        <i class="fa fa-phone"> </i>
+        <p>07411 767 429</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:info@wanderlust.com">info@wanderlust.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right col-md-4">
+
+      <h3 class="footer-company-about">
+        <span>Live, love, travel!</span> <br>
+        We at <strong>WANDERLUST</strong> want to see where you've been. Share and tweet you favourite destinations with us
+      </h3>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/" i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" i class="fa fa-twitter"></i></a>
+        <a href="https://gb.linkedin.com/" i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/" i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </div>   
+
   <script>
   $("button.like").on("click", function() {
     alert("Thanks for Liking");
@@ -150,5 +208,4 @@
     alert("Thanks for Subscribing");
   });
   </script>
-
 </body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Wanderlust - Venice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "dist/css/bootstrap.css" rel= "stylesheet">
+  <link href="normalize.css" rel="stylesheet" >
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="200px" height="" class="img-circle">
+    <h1>Wanderlust Blog</h1>
+    <ul id="nav">
+      <li><a href="blog.html">Home</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="#first">Recent Trips</a></li>
+      <li><a href="Contact.html">Recommend to a Friend</a><li> 
+    </ul>
+  </header>
+
+
+
+<div class="contact sheet">
+<h1> Tell your friends about us: </h1>
+
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  </div> </br></br>
+  <div class="form-group">
+    <label for="Message">Message</label>
+    <input type="text" class="form-control" id="Message" placeholder="Hi! Check out this site." input size="100">
+  </div>
+  <button type="submit" class="btn btn-success thank">Send invitation</button>
+</form>
+
+</div>
+
+ <script>
+  $("button.thank").on("click", function() {
+    alert("Thank you for telling your friends about us! Why not check out our recent destinations?");
+  });
+  </script>
+</body>

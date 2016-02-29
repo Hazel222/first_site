@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Wanderlust - Peru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "dist/css/bootstrap.css" rel= "stylesheet">
+  <link href="normalize.css" rel="stylesheet" >
+  <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/11937006_10155961360540364_5614672601190817979_o.jpg" width="200px" height="" class="img-circle">
+    <h1>Wanderlust Blog</h1>
+    <ul id="nav">
+      <li><a href="blog.html">Home</a></li>
+      <li><a href="#">Pictures</a></li>
+      <li><a href="#first">Recent Trips</a></li>
+      <li><a href="Contact.html">Recommend to a Friend</a><li> 
+    </ul>
+  </header>
+
+
+
+<div class="peru">
+    
+    <div class= "container">
+      <div class="row">
+        <div class="col-md-8">
+         <article>
+          <h2>Peru</h2>
+          <p>Peru is where my sense of adventure came out to play</p>
+          <p>During the 3 weeks I was in Peru I travelled across the country on some organised tours, had my mum come join me for a few days and went it alone and met some great friends</p>
+          <ul id="Peru">
+            <li>Inca Trail</li>
+            <li>Sandboard in Huccachina</li>
+            <li> Zip lined, climbed down a waterfall (canyoning) and trekked through the jungle in Banos</li>
+            <li>Surfed in  </li>
+          </ul>  
+          <button class="btn-success like center-block" id="peru">Like</button>
+        </article>
+      </div>
+      <div class="col-md-4">
+       <img src="images/Peru2.jpg" class="img-responsive">
+     </div>
+
+<script>
+  $("button.like").on("click", function() {
+    alert("Thanks for Liking");
+  });
+  </script>
+</body>     
